@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+
+
+
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="Index.html">Blog</a></div>
+            <ul class="links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            </div>
+        </div>
+    </header>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleBtn = document.querySelector('.toggle_btn');
+            const links = document.querySelector('.links');
+
+            toggleBtn.addEventListener('click', () => {
+                links.classList.toggle('active');
+            });
+        });
+    </script>    
+
+
+
+<main>
+    <section class="hero-section" id="hero">
+        <div class="card-container">
+            
+            <div class="card">
+                <div class="card-background" style="background-image: url(../images/Tsushima.jpg);"></div>
+                
+                <div class="content">
+                    <div class="card-category">Japan</div>
+                    <h3 class="card-heading">Tsushima</h3>
+                    <p class="card-description">The island of Tsushima is situated between the southern coast of Korea and the Japanese 
+                        island of Kyushu.    
+                        <span class="read-more-text">
+                            Filled with mountain forests, cliffs, and coastlines. A place full of culture and 
+                            nature, it has a unique ecosystem that houses many species,many historical sites, 
+                            and also fishing spots. Overall it is known for its natural beauty.
+                        </span>
+                    </p>
+                    <span class="read-more-btn">Read More...</span>
+                </div>
+                
+            </div>
+            <div class="card">
+                <div class="card-background" style="background-image: url(../images/Gothenburg.jpg);"></div>
+                <div class="content">
+                    <div class="card-category">Sweden</div>
+                    <h3 class="card-heading">Göthenburg</h3>
+                    <p class="card-description">Göthenburg, a thriving city on Sweden's west coast, is well-known for its seafood cuisine, nautical heritage, and 
+                        
+                    <span class="read-more-text"> thriving cultural scene. Located in the center of Europe, Switzerland is well known for its stunning scenery,
+                        which includes the Alps, crystal-clear lakes, and quaint towns. </span>
+                
+                    </p>
+                    <span class="read-more-btn">Read More...</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-background" style="background-image: url(../images/Seoul.jpg);"></div>
+                <div class="content">
+                    <div class="card-category">South-Korea</div>
+                    <h3 class="card-heading">Seoul</h3>
+                    <p class="card-description">South Korea's capital, Seoul, is a dynamic city that seamlessly blends modernity and 
+                        centuries-old heritage. 
+                        <span class="read-more-text"> One of Asia's most vibrant cities, it is located in the country's northwest and 
+                            is well-known for its architecture, gastronomy, technology, and culture. </span>
+                    </p>
+                    <span class="read-more-btn">Read More...</span>
+                </div>
+            </div>
+        </div>
+        <script src="../js/script.js"> </script>
+    </section>
+</main>
+
+<footer>
+    <div class="social-icons">
+        <a href="https://twitter.com" target="_blank">X</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+</footer>
+
+</body>
+</html>
+
